@@ -14,6 +14,7 @@ depositeBtn.addEventListener('click',function()
     var depositeAmmount = document.getElementById('depositeAmmount').value;
     depositeUpdate(depositeAmmount);
     balanceUpdateForDeposite(depositeAmmount);
+    document.getElementById('depositeAmmount').value = '';
 });
 
 function depositeUpdate(num)
@@ -32,6 +33,7 @@ withdrawButton.addEventListener('click',function()
     var withdrawAmount = document.getElementById('withdrawAmount').value;
     withdrawUpdate(withdrawAmount);
     balanceUpdateForWithdraw(withdrawAmount);
+    document.getElementById('withdrawAmount').value = '';
 })
 function withdrawUpdate(num) {
     var withdrawBalance = document.getElementById('withdrawBalance').innerHTML;
