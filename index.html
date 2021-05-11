@@ -5,8 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Functionality</title>
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="login">
+        <div class="container">
+            <h1 class="login-title text-center">Welcome To <span style="font-weight: 800; font-size: 30px; color:#17a2b8">Easin's Personal Bank</span></h1>
+            <div class="login-area">
+                <h4>Login</h4>
+                <input class="form-control" type="text" placeholder="Enter Your Email  Address"><br>
+                <input class="form-control" type="password" placeholder="Enter Password"><br>
+                <button id="login" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section class="transaction-area">
+       <div class="container">
+        <h1 class="login-title text-center">Transaction <span style="font-weight: 800; font-size: 30px; color:#17a2b8">History</span></h1>
+        <!-- Deposit-Withdraw-Balance Box Start  -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$1000</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Deposit-Withdraw-Balance Box End  -->
+        <!-- Deposit-Withdraw-Input Box Start  -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="depositInput status">
+                    <h5>Deposit</h5>
+                    <input type="text" class="form-control" placeholder="$amount you want to Deposit"><br>
+                    <button class="btn btn-info">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="withdrawInput status">
+                    <h5>Withdraw</h5>
+                    <input type="text" class="form-control" placeholder="$amount you want to withdraw"><br>
+                    <button class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- Deposit-Withdraw-Input Box End  -->
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom JS  -->
+    <script src="bankFunctionality.js"></script>
 </body>
 </html>
